@@ -1,0 +1,20 @@
+<div class="wizard">
+    <div class="row">
+	    <ul class="nav nav-pills nav-wizard nav-justified">
+		    <li ng-repeat="step in steps" ng-class="{'active': step.currentStep}">
+		    	<div ng-class="{'nav-wedge': $first == false}"></div>
+		    	<a ng-click="goToStep($index)" data-toggle="tab">{{step.title}}</a>
+		    	<div ng-class="{'nav-arrow': $last == false}"></div>
+		    </li>
+		</ul>
+	</div>
+    
+	<div ng-transclude></div>
+
+	<div class="row top-buffer">	
+	    <div class="form-group">
+	        <button class="btn btn-lg btn-info pull-left" ng-click="back()" ng-show="showBackBtn()">&laquo; Previous</button>	        
+	        <button class="btn btn-lg btn-info pull-right" ng-click="next()" ng-show="showNextBtn()">Next &raquo;</button>
+	    </div> 
+	</div> 
+</div>

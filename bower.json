@@ -1,0 +1,24 @@
+{
+  "name": "ng-wizard",
+  "version": "0.0.0",
+  "authors": [
+    "Lionel Cuevas <liocuevas@gmail.com>"
+  ],
+  "description": "Wizard directive for angularjs",
+  "main": ["ng-wizard.js", "ng-wizard.css"],
+  "keywords": [
+    "steps",
+    "wizard",
+    "angularjs",
+    "directive"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/liocuevas/ng-wizard",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
